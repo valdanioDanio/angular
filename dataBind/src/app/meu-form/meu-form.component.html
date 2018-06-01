@@ -1,0 +1,39 @@
+<!-- <p>
+  data-bind works!
+</p>
+<p>component de {{ nome }}</p>
+<p>component de {{ getValor() }}</p>
+<h1>Style e Component Bind</h1> -->
+
+<!-- <section>
+  <article>
+    <h3>Event biding</h3>
+    <div>
+      <button (click)="btnClick()" class="btn btn-primary">Clique</button>
+    </div>
+  </article>
+</section>
+<input type="text" (keyup)="onKeyUp($event)" (keyup.enter) = "salvar($)" />
+
+<span (mouseover)="OnMouseOver()" (mouseout)="OnMouseOverOut()" [class.highlight]="this.isMouseOver">passa sobre mim</span> -->
+
+<section>
+  <article>
+    <h3>Two way data biding</h3>
+    <div>
+      <!-- <input type="text" [value] = "nomes"  (input) = "nomes=$event.target.value"/> -->
+      <!-- <input type="text" 
+      [ngModel] = "nomes" (ngModelChange)="nomes=$event"/> -->
+    </div> 
+
+    <input type="text" [value] = "nomes"  [(ngModel)]="nomes"/>
+    
+    <p>voce digitou o nome {{ nomes }}</p>
+
+    <div> 
+      <input type="text" [(ngModel)] = "pessoa.nome">
+      <input type="text" [(ngModel)] = "pessoa.idade">
+      <p>voce digitou o nome {{ pessoa.nome }} idade {{ pessoa.idade }}</p>
+    </div>
+  </article>
+</section>
