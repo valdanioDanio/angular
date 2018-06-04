@@ -1,0 +1,10 @@
+<h5>*ngIf</h5>
+
+<div *ngIf="cursos.length > 0">
+  Lista de Cursos
+</div>
+<template [ngIf]="cursos.length == 0">
+  <div>
+    Lista de Cursos
+  </div>
+</template>

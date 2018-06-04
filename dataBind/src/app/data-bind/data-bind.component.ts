@@ -12,6 +12,7 @@ export class DataBindComponent implements OnInit {
   nome: string = "Valdanio Alberto";
   isMouseOver: boolean = false;
   nomes:any = "abd";
+  valorInicial = 29;
 
   pessoa:any = {
     nome:'Valdanio',

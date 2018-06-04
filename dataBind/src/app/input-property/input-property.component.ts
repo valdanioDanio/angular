@@ -12,6 +12,7 @@ export class InputPropertyComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    
   }
 
 }

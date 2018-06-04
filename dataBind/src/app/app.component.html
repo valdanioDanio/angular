@@ -1,4 +1,4 @@
-<app-data-bind></app-data-bind>
+<!-- <app-data-bind></app-data-bind> -->
 <!-- <select #classe (change) = 0>Selecione uma classe
     <option value="alert alert-success">Sucesso</option>
     <option value="alert alert-success">Alerta</option>
@@ -14,4 +14,5 @@
   <div class="alert" role="alert">
     This is a success alert—check it out!
   </div> -->
- 
+ <app-ciclo [valorInicial]="valor"></app-ciclo>
+ <input type="button" (click)="mudouValor()"  value="Mudar Valor">

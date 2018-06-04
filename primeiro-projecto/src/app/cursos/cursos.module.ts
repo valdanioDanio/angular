@@ -9,7 +9,7 @@ import { CursosDetalheComponent } from './cursos-detalhe/cursos-detalhe.componen
     CommonModule
   ],
   declarations: [CursosComponent, CursosDetalheComponent],
-  exports:[CursosComponent],
-  providers:[CursosService]
+  exports: [CursosComponent],
+  providers: [CursosService]
 })
 export class CursosModule {}
