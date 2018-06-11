@@ -3,13 +3,11 @@ import { CursosComponent } from './cursos.component';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursoNaoEncotradoComponent } from './curso-nao-encotrado/curso-nao-encotrado.component';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { CursosRoutingModule } from './cursos.routing.module';
 import { CursosService } from './cursos.service';
 
-
-
 @NgModule({
-    imports: [CommonModule,RouterModule],
+    imports: [CommonModule,CursosRoutingModule],
 exports: [],
     declarations: [
         CursosComponent,
