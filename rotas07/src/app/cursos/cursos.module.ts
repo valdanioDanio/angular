@@ -4,6 +4,7 @@ import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursoNaoEncotradoComponent } from './curso-nao-encotrado/curso-nao-encotrado.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CursosService } from './cursos.service';
 
 
 
@@ -14,7 +15,7 @@ exports: [],
         CursosComponent,
         CursoDetalheComponent,
         CursoNaoEncotradoComponent],
-    providers: [],
+    providers: [CursosService],
 })
 
 export class CursosModule {
