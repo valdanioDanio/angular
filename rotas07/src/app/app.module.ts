@@ -11,6 +11,8 @@ import { CursosService } from './cursos/cursos.service';
 // // import { CursoNaoEncotradoComponent } from './cursos/curso-nao-encotrado/curso-nao-encotrado.component';
 import { AppRoutingModule } from './app.routing.module';
 import { CursosModule } from './cursos/cursos.module';
+// import { AlunosComponent } from './alunos/alunos.component';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -18,17 +20,19 @@ import { CursosModule } from './cursos/cursos.module';
     HomeComponent,
     // CursosComponent,
     LoginComponent,
+    // AlunosComponent,
     // CursoDetalheComponent,
     // CursoNaoEncotradoComponent,
     // CursoNaoEncotradoComponent
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     // routing
     CursosModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlunosModule
   ],
- // providers: [CursosService],
+  // providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
